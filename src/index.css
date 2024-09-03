@@ -1,0 +1,84 @@
+:root {
+  --mainColor: #15abd8;
+  --shadowColor: rgb(23, 77, 192);
+}
+@font-face {
+    font-family: Actor;
+    src: url('../public/fonts/Actor-Regular.ttf');
+}
+@font-face {
+    font-family: Inter;
+    src: url('../public/fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+*::after{
+    pointer-events: none;
+}
+html, body {
+    height: 100%;
+    min-width: 100px;
+}
+body {
+    line-height: 1;
+    font-family: Inter;
+    color: #fff;
+    background: var(--mainColor);
+    cursor: default;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, p, figure {
+    margin: 0;
+}
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.primary-title {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 0.4px;
+}
+
+.secondary-title {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Actor, sans-serif;
+    letter-spacing: 2px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58.09px;
+    letter-spacing: 0.07em;
+    text-shadow: -4px -4px var(--shadowColor);
+}
+
+.white-bg {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff; 
+    border-radius: 32px;
+}
